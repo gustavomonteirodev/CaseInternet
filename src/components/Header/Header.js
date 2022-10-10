@@ -6,7 +6,7 @@ import Button from '@mui/material/Button';
 
 const Header =() => {
   return (
-
+    
     <AppBar position="static">
     <StyledToolBar>
         {/* <h1>LaNet</h1> */}
