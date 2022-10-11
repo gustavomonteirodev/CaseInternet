@@ -42,7 +42,7 @@
 }
 
 #input-cep::selection {
-    background-color: #4B9093;
+    background-color: #2c387e;
     color: rgb(255, 255, 255);
 }
 
@@ -53,7 +53,7 @@ form{
 
 .btn-find {
     border-radius: 10px;
-    background-color: #4B9093;
+    background-color: #2c387e;
     border: none;
     color: #fff;
     cursor: pointer;
@@ -61,8 +61,9 @@ form{
 }
 
 .btn-find:hover {
-    background-color: #03929a;
+    background-color: #2c387e;
     color: #fff;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .btn-find:focus {
@@ -79,7 +80,7 @@ form{
 }
 
 .btn-clean:hover {
-    background-color: #4B9093;
+    background-color: #ff3d00;
 }
 
 .btn-clean:focus {
@@ -100,7 +101,7 @@ form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #4B9093;
+    color: #2c387e;
     padding: 8px;
     border-bottom: 1px solid grey;
     animation-duration: 0.5s;
@@ -108,7 +109,7 @@ form{
 }
 
 .data-list::selection {
-   background-color: #4B9093;
+   background-color: #2c387e;
 }
 
 .data-list.error-data-cep {

@@ -5,6 +5,7 @@
     justify-content: space-evenly;
 }
 
+
 .cards{
     display: flex;
     flex-direction: column;
@@ -16,10 +17,13 @@
     box-shadow: -0.7px 1.9px 3px 0 rgb(0 0 0 / 19%);
 }
 
+.cards:hover {
+    box-shadow: 2px 2px 3px 4px rgb(0 0 0 / 19%);
+    transform: scale(1.1);
+}
+
 .plano{
-    padding-top: 10px;
-    display: inline-block;
-    flex-direction: row;    
+    padding-top: 10px;  
     font-size: 40px;
     color: #F56E28;
     padding-bottom: 20px;
@@ -37,11 +41,47 @@
 }
 
 .botoes {
-    top: 40px;
+    margin-top: 30px;
+    height: 40px;
+    width: 70px;
+    align-items: center;
+    justify-content: center;
+    border: none;
     display: flex;
     width: 100px;
+    border-radius: 5px;
 }
 
+.botoes:disabled,
+.botoes[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+/* .botoes:hover{
+    background-color:#ff3d00;
+} */
+
+#botao-voltar {
+    margin-top: 35px;
+    margin-left: 82%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color:#fff;
+    font-size: 20px;
+    width: 200px;
+    background-color:#ff3d00;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#botao-voltar:hover{
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
 
 
 /* @media only screen and (min-width: 300px) {

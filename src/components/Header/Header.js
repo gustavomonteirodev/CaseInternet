@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 const Header =() => {
   return (
     
-    <AppBar position="static">
+    <AppBar position="static" color="primary">
     <StyledToolBar>
         <h1>NetPlanos</h1>
         <Button color="inherit">Login</Button>

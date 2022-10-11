@@ -1,14 +1,37 @@
 import React from "react";
 import "./OffersStyle.css"
-import Button from '@mui/material/Button';
 
-import theme from "../../constants/theme"
 const Offers = () => {
+
+    const scrollHome = () =>{
+        window.scrollTo({
+          top: 0, 
+          behavior: 'smooth'
+        });
+      };
+
     return (
         <>
             <div className="cards-pai">
 
             <section className="cards">
+                    <h2 className="plano">20 Megas</h2>
+                    <div className="Informacoes-plano">
+                        <p>Upload</p>
+                        <strong><p>15 Megas</p></strong>
+                    </div>
+                    <div className="Informacoes-plano">
+                        <p>Trafego/mês</p>
+                        <strong><p>Ilimitado</p></strong>
+                        </div>
+                        <div className="Informacoes-plano">
+                        <p>Valor</p>
+                        <strong><p>R$ 109,00</p></strong>
+                        </div>
+                        <button className="botoes" color="primary" variant="contained" disabled>Contrate</button>
+                    </section>
+
+                    <section className="cards">
                     <h2 className="plano">15 Megas</h2>
                     <div className="Informacoes-plano">
                         <p>Upload</p>
@@ -22,7 +45,7 @@ const Offers = () => {
                         <p>Valor</p>
                         <strong><p>R$ 99,00</p></strong>
                         </div>
-                        <Button className="botoes" color="primary" variant="outlined">Contrate</Button>
+                        <button className="botoes" color="primary" variant="contained" disabled>Contrate</button>
                     </section>
 
                 <section className="cards">
@@ -39,7 +62,7 @@ const Offers = () => {
                         <p>Valor</p>
                         <strong><p>R$ 80,00</p></strong>
                         </div>
-                        <Button className="botoes" color="primary" variant="outlined">Contrate</Button>
+                        <button className="botoes" color="primary" variant="contained" disabled>Contrate</button>
                     </section>
 
                     <section className="cards">
@@ -56,9 +79,10 @@ const Offers = () => {
                         <p>Valor</p>
                         <strong><p>R$ 69,00</p></strong>
                         </div>
-                        <Button className="botoes" color="primary" variant="outlined">Contrate</Button>
+                        <button className="botoes" color="primary" variant="contained" disabled>Contrate</button>
                     </section>
             </div>
+            <button id="botao-voltar" onClick={scrollHome}>Ops, errei meu cep!</button>
         </>
     );
 }
