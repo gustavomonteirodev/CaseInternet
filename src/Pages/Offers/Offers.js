@@ -1,14 +1,11 @@
 import React from "react";
 import "./OffersStyle.css"
 
-const Offers = () => {
+const Offers = (props) => {
 
-    const scrollHome = () =>{
-        window.scrollTo({
-          top: 0, 
-          behavior: 'smooth'
-        });
-      };
+function atualizarPagina() {
+    window.location.reload();
+}
 
     return (
         <>
@@ -82,7 +79,7 @@ const Offers = () => {
                         <button className="botoes" color="primary" variant="contained" disabled>Contrate</button>
                     </section>
             </div>
-            <button id="botao-voltar" onClick={scrollHome}>Ops, errei meu cep!</button>
+            <button id="botao-voltar" onClick={atualizarPagina}>Ops, errei meu cep!</button>
         </>
     );
 }
