@@ -30,7 +30,7 @@
     height: 8vh;
     border-radius: 10px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-    border: 1px solid grey;
+    border: none;
     padding: 8px;
     box-sizing: border-box;
     margin-right: 1%;

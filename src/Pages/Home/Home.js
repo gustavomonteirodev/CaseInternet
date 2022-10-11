@@ -51,7 +51,7 @@ const Home = () => {
     return (
         <div className="container">
             <img className="banner" src={netPlano} alt="banner-apresentacao-internet"/>
-            <h2 className="boas-vindas">Somos a líder em satisfação em pesquisa realizada pela Anatel. </h2>
+            <h1 className="boas-vindas">Somos a líder em satisfação em pesquisa realizada pela Anatel. </h1>
             <h4 className="boas-vindas-subtitulo">Para consultar nossos planos, digite seu CEP:</h4>
             <div className="component-search">
                 <form onSubmit={handleSubmit}>
