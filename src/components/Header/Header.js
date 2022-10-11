@@ -9,9 +9,8 @@ const Header =() => {
     
     <AppBar position="static">
     <StyledToolBar>
-        {/* <h1>LaNet</h1> */}
-        <Button color="inherit">Home</Button>
-        <Button color="inherit">Offers</Button>
+        <h1>NetPlanos</h1>
+        <Button color="inherit">Login</Button>
     </StyledToolBar>
   </AppBar>
 
