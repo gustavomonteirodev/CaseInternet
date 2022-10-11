@@ -1,22 +1,17 @@
 .boas-vindas {
-    padding-top: 5vh;
+    padding-top: 3vh;
     display: flex;
     justify-content: center;
     color: #F56E28;
     margin: auto 0;
     font-weight: 1000;
+
 }
 
 .banner {
     width: 100%;
 }
-.boas-vindas-subtitulo {
-    padding-top: 3vh;
-    display: flex;
-    justify-content: center;
-    color: rgba(0, 0, 0, 0.687);
-    margin: auto 0;
-}
+
 .component-search {
     margin-top: 5vh;
     display: flex;
@@ -66,6 +61,9 @@ form{
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
+input {
+    text-align: center;
+}
 .btn-find:focus {
     outline: none;
 }

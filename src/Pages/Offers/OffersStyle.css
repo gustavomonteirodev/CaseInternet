@@ -12,7 +12,7 @@
     align-items: center;
     border-radius: 10px;
     width: 280px;
-    height: 350px;
+    height: 370px;
     background-color: white;
     box-shadow: -0.7px 1.9px 3px 0 rgb(0 0 0 / 19%);
 }
@@ -54,14 +54,11 @@
 
 .botoes:disabled,
 .botoes[disabled]{
-  border: 1px solid #999999;
+  border: none;
   background-color: #cccccc;
   color: #666666;
 }
 
-/* .botoes:hover{
-    background-color:#ff3d00;
-} */
 
 #botao-voltar {
     margin-top: 35px;

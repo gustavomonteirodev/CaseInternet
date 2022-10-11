@@ -52,18 +52,17 @@ const Home = () => {
         <div className="container">
             <img className="banner" src={netPlano} alt="banner-apresentacao-internet"/>
             <h1 className="boas-vindas">Somos a líder em satisfação em pesquisa realizada pela Anatel. </h1>
-            <h4 className="boas-vindas-subtitulo">Para consultar nossos planos, digite seu CEP:</h4>
             <div className="component-search">
                 <form onSubmit={handleSubmit}>
                     <input
                         id="input-cep"
                         label="Consulte o CEP"
-                        placeholder={"Ex:57071-100"}
+                        placeholder="Para consultar nossos planos, digite seu CEP:"
                         value={cep}
                         onChange={handleChange}
                         maxLength="9"
                         autoFocus
-                    ></input>
+                    />
                     <button variant="contained" type="submit" className="btn-find">
                         <SendIcon className="icon-send" />
                     </button>

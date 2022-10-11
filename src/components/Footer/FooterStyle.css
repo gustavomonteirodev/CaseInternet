@@ -1,0 +1,27 @@
+.Footer {
+    height: 170px;
+    background-color: #2c387e ;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin:auto;
+    margin-top: 3%;
+}
+
+.icones-configuracao {
+    color: #ff3d00;
+    cursor:pointer;
+    margin: 15px 5px 15px 15px;
+}
+
+.icones-container {
+    margin-right: 30px;
+
+}
+
+.MuiSvgIcon-root {
+    width: 10em;
+    height: 10em;
+}
