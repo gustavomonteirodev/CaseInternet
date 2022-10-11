@@ -5,7 +5,6 @@
     justify-content: space-evenly;
 }
 
-
 .cards{
     display: flex;
     flex-direction: column;
@@ -81,19 +80,22 @@
 }
 
 
-/* @media only screen and (min-width: 300px) {
-    .cards-pai {
-        margin-top: 5vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .cards{
-        display: flex;
-        justify-content: center;
-        border-radius: 10px;
-        width: 300px;
-        height: 450px;
-        border: 1px solid black;
-    }
-} */
+
+
+@media screen and (max-width:1000px){
+
+}
+
+@media screen and (max-width:950px){
+
+}
+
+@media screen and (max-width:800px){
+
+}
+
+@media screen and (max-width:768px) {
+
+}
+
+    

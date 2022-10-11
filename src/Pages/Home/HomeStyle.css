@@ -45,6 +45,10 @@ form{
     justify-content: center;
 }
 
+button {
+    width: 15%;
+}
+
 .btn-find {
     border-radius: 10px;
     background-color: #2c387e;
@@ -112,7 +116,6 @@ input {
 .data-list.error-data-cep {
     width: 30%;
     color: #934b4b;
-    /* position: absolute; */
     bottom: 0;
     padding: 16px 8px;
     box-sizing: border-box;
@@ -143,36 +146,77 @@ input {
     vertical-align: text-bottom;
 }
 
-@media only screen and (min-width: 1200px) {
-    .btn-find{
-        width: 12vw;
-    }
-    .btn-clean{
-        width: 8vw;
-    }
-}
 
-@media only screen and (max-width: 250px) {
-    form {
+@media screen and (max-width:1000px){
+    .boas-vindas {
+        padding-top: 1vh;
+        padding-left: 15%;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        margin: auto 0;
+        font-weight: 1000;
+    }
+
+    .component-search {
+        margin-top: 3vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        user-select: none;
+    }
+    
+    #input-cep{
+        width: 60vw;
+        height: 7vh;
+        border-radius: 10px;
+        border: none;
+        padding: 6px;
+        box-sizing: border-box;
+        margin-right: 1%;
+        margin-left: 20%;
+    }
+    
+    #input-cep:focus {
+        outline: none;
+    }
+    
+    form{
+        display: flex;
         flex-direction: column;
     }
-    #input-cep {
-        width: 100%;
-        margin-bottom: 2%;
+
+    button {
+        box-sizing: border-box;
+        width: 60%;
+        height: 7vh;
     }
-    .btn-find{
-        width: 100%;
-        font-size: 0.6em;
-        margin-bottom: 2%;
+    
+    .btn-find {
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        margin: 10px 0 10px 20%; 
     }
-    .btn-clean{
-        width: 100%;
+    
+    input {
+        text-align: center;
     }
-    .data-list {
-        height: max-content;
-        margin-bottom: 2%;
+    
+    .btn-clean {
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        margin-left: 20%;
     }
-    span {
-        font-size: 1rem;
+    
+    .component-response {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 2%;
     }
+    
 }
+

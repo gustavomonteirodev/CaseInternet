@@ -68,20 +68,18 @@ const Home = () => {
                     <input
                         id="input-cep"
                         label="Consulte o CEP"
-                        placeholder="Para consultar nossos planos, digite seu CEP:"
+                        placeholder="Digite seu CEP:"
                         value={states.cep}
                         onChange={handleChange}
                         maxLength="9"
                         autoFocus
                     />
-
                     <button variant="contained" type="submit" className="btn-find" onClick={mostrarOuEsconder}>
                         <SendIcon className="icon-send" />
                     </button>
                     <button color="inherit" variant="contained" type="button" className="btn-clean" onClick={clearContent}>
                         <DeleteForeverIcon className="icon-clean" />
                     </button>
-
                 </form>
             </div>
 
