@@ -6,15 +6,15 @@ import SendIcon from '@material-ui/icons/Send';
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
 import netPlano from "../../assets/netPlano.png"
 import Offers from "../../Pages/Offers/Offers";
+import GlobalContext from '../../Global/GlobalContext'
+import { useContext } from 'react'
 
 const Home = () => {
-    const [cep, setCep] = useState("");
-    const [dados, setDados] = useState("");
-    const [errorDataCep, setErrorDataCep] = useState("");
-    const [mostrarElement, setMostrarElement] = useState(false)
+
+    const { states, setters } = useContext(GlobalContext)
     
     const mostrarOuEsconder = () => {
-        setMostrarElement(true)}
+        setters.setMostrarElement(true)}
 
         function atualizarPagina() {
             window.location.reload();
@@ -24,37 +24,37 @@ const Home = () => {
         event.preventDefault();
 
         // validators client side
-        if (cep.length < 9) {
-            setDados("");
-            setErrorDataCep("Por favor, digite um CEP válido");
+        if (states.cep.length < 9) {
+            setters.setDados("");
+            setters.setErrorDataCep("Por favor, digite um CEP válido");
             return
         }
 
         // request server side
-        const response = await api.get(`/${cep}/json`);
+        const response = await api.get(`/${states.cep}/json`);
         const data = response.data;
-        setDados(data);
+        setters.setDados(data);
 
         // errors server side
         if (data.erro) {
-            setDados("");
-            setErrorDataCep("Este CEP não está cadastrado em nossa Base de Dados");
+            setters.setDados("");
+            setters.setErrorDataCep("Este CEP não está cadastrado em nossa Base de Dados");
             return
         }
 
         // ok !
-        setDados(data);
-        setErrorDataCep("");
+        setters.setDados(data);
+        setters.setErrorDataCep("");
     }
 
     function handleChange(event) {
-        setCep(cepMask(event.target.value));
+        setters.setCep(cepMask(event.target.value));
     }
 
     function clearContent(event) {
-        setCep("");
-        setDados("");
-        setErrorDataCep("")
+        setters.setCep("");
+        setters.setDados("");
+        setters.setErrorDataCep("")
         atualizarPagina()
         ;
     }
@@ -69,7 +69,7 @@ const Home = () => {
                         id="input-cep"
                         label="Consulte o CEP"
                         placeholder="Para consultar nossos planos, digite seu CEP:"
-                        value={cep}
+                        value={states.cep}
                         onChange={handleChange}
                         maxLength="9"
                         autoFocus
@@ -86,22 +86,22 @@ const Home = () => {
             </div>
 
             <div className="component-response">
-                {dados && (
+                {states.dados && (
                     <>
-                        <span className="data-list">{dados.cep}</span>
-                        <span className="data-list">{dados.logradouro}</span>
-                        <span className="data-list">{dados.bairro}</span>
-                        <span className="data-list">{dados.localidade}</span>
-                        <span className="data-list">{dados.uf}</span>
+                        <span className="data-list">{states.dados.cep}</span>
+                        <span className="data-list">{states.dados.logradouro}</span>
+                        <span className="data-list">{states.dados.bairro}</span>
+                        <span className="data-list">{states.dados.localidade}</span>
+                        <span className="data-list">{states.dados.uf}</span>
                     </>
                 )}
-                {errorDataCep && (
+                {states.errorDataCep && (
                     <span className="data-list error-data-cep">
-                        {errorDataCep}
+                        {states.errorDataCep}
                     </span>
                 )}
             </div>
-                {mostrarElement ? <Offers mostrarOuEsconder={mostrarOuEsconder} mostrarElement={mostrarElement} />: null}
+                {states.mostrarElement ? <Offers mostrarOuEsconder={mostrarOuEsconder} mostrarElement={states.mostrarElement} />: null}
         </div>
     );
 }
