@@ -4,6 +4,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 export const StyledToolBar = styled (Toolbar)`
     display: flex; 
     flex-direction: row;
-    justify-content: end;
-    margin-right: 5vw;
+    justify-content: space-between;
+    h1 {
+        font-size: 1.5rem; 
+    }
 `

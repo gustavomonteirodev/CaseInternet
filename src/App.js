@@ -1,22 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import theme from "./constants/theme";
 import { ThemeProvider } from "@material-ui/core/styles";
-import { GlobalStyles } from "./GlobalStyle";
-import Home from "./components/Pages/Home/Home";
-import Offers from "./components/Pages/Offers/Offers";
+import Home from "./Pages/Home/Home";
+import GlobalState from "./Global/GlobalState";
+import "./App.css"
 
 function App() {
+
   return (
+    <GlobalState >
       <ThemeProvider theme={theme}>
-      <GlobalStyles />
       <Header />
-      <h1> Olá, seja bem-vindo!</h1>
-      <Home />
-      <Offers />
+      <Home  />
       <Footer />
       </ThemeProvider>
+      </GlobalState>
   );
 }
 

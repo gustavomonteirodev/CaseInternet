@@ -1,0 +1,128 @@
+.cards-pai {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    width: 280px;
+    height: 370px;
+    background-color: white;
+    box-shadow: -0.7px 1.9px 3px 0 rgb(0 0 0 / 19%);
+}
+
+.cards:hover {
+    box-shadow: 2px 2px 3px 4px rgb(0 0 0 / 19%);
+    transform: scale(1.1);
+}
+
+.plano{
+    padding-top: 10px;  
+    font-size: 40px;
+    color: #F56E28;
+    padding-bottom: 20px;
+}
+
+
+.Informacoes-plano {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    border-bottom: 1px solid grey;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.botoes {
+    margin-top: 30px;
+    height: 40px;
+    width: 70px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    display: flex;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.botoes:disabled,
+.botoes[disabled]{
+  border: none;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+
+#botao-voltar {
+    margin-top: 35px;
+    margin-left: 82%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color:#fff;
+    font-size: 20px;
+    width: 200px;
+    background-color:#ff3d00;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#botao-voltar:hover{
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+@media screen and (max-width:1000px){
+
+    .cards-pai {
+        margin-top: 5vh;
+        margin-left: 15%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        width: 280px;
+        height: 370px;
+        margin-bottom: 25px;
+    }
+
+    #botao-voltar {
+        margin-top: 15px;
+        margin-left: 27%;
+    }
+
+
+}
+
+
+
+
+
+@media screen and (max-width:950px){
+
+}
+
+@media screen and (max-width:800px){
+
+}
+
+@media screen and (max-width:768px) {
+
+}
+
+    
