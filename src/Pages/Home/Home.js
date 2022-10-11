@@ -89,8 +89,7 @@ const Home = () => {
                         <span className="data-list">{states.dados.cep}</span>
                         <span className="data-list">{states.dados.logradouro}</span>
                         <span className="data-list">{states.dados.bairro}</span>
-                        <span className="data-list">{states.dados.localidade}</span>
-                        <span className="data-list">{states.dados.uf}</span>
+                        <span className="data-list">{states.dados.localidade}, {states.dados.uf}</span>
                     </>
                 )}
                 {states.errorDataCep && (

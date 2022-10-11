@@ -149,7 +149,7 @@ input {
 
 @media screen and (max-width:1000px){
     .boas-vindas {
-        padding-top: 1vh;
+        padding-top: 4vh;
         padding-left: 15%;
         font-size: 20px;
         display: flex;
@@ -196,7 +196,7 @@ input {
         border-radius: 10px;
         border: none;
         cursor: pointer;
-        margin: 10px 0 10px 20%; 
+        margin: 15px 0 15px 20%; 
     }
     
     input {

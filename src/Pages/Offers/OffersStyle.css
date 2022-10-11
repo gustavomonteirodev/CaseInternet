@@ -84,7 +84,34 @@
 
 @media screen and (max-width:1000px){
 
+    .cards-pai {
+        margin-top: 5vh;
+        margin-left: 15%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        width: 280px;
+        height: 370px;
+        margin-bottom: 25px;
+    }
+
+    #botao-voltar {
+        margin-top: 15px;
+        margin-left: 27%;
+    }
+
+
 }
+
+
+
+
 
 @media screen and (max-width:950px){
 
