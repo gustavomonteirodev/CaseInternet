@@ -1,7 +1,10 @@
 # 👨‍💻 Landing Page - NetPlanos 
 Teste técnico referente a uma Landing page com foco na venda de planos de internet.
 
-## 📸 Demo Gif 
+## 📸 Demo Gif Web/Mobile
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/104602579/195183581-ed1c2298-7672-4ee8-a3e6-4306610368cb.gif)
+
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/104602579/195186110-3e208cf0-e340-4600-9a54-9007269969c3.gif)
 
 
 ## ⚛️ Tecnologias 
