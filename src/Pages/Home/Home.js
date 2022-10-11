@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import api from "../../constants/api"
 import { cepMask } from "../../components/Mask";
-import "./Consulta.css";
+import "./HomeStyle.css";
 import SendIcon from '@material-ui/icons/Send';
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
 import netPlano from "../../assets/netPlano.png"
