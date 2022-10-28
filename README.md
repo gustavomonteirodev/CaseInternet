@@ -1,5 +1,5 @@
 # 👨‍💻 Landing Page - NetPlanos 
-Teste técnico referente a uma Landing page com foco na venda de planos de internet.
+Freelancer de uma Landing page com foco na venda de planos de internet.
 
 ## 📸 Demo Gif Web/Mobile
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/104602579/195183581-ed1c2298-7672-4ee8-a3e6-4306610368cb.gif)
